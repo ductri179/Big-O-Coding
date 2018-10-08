@@ -1,4 +1,4 @@
-package com.oscartran.bigocoding;
+package com.oscartran.codeforces;
 
 import java.io.InputStreamReader;
 import java.util.ArrayList;

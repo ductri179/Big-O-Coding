@@ -1,5 +1,5 @@
 
-package com.oscartran.codeforces.day3;
+package com.oscartran.codeforces;
 
 import java.util.ArrayList;
 import java.util.Collections;
