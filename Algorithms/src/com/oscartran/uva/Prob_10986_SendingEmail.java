@@ -7,6 +7,11 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
+/*
+ * Idea: using Dijkstra algorithm
+ * 
+ * */
+
 class Prob_10986_SendingEmail {
 
 	static class Node implements Comparable<Node> {

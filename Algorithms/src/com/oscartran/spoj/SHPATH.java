@@ -7,6 +7,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+/*
+ * Idea: using Dijkstra algorithm but have to optimize it by adding finish node as a parameter for the function,
+ * whenever pop the node from the heap, break the while loop and print the output
+ * 
+ * 
+ * */
+
+
 class SHPATH {
 
 	static class Node implements Comparable<Node> {
