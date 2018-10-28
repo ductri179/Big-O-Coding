@@ -1,10 +1,12 @@
 package com.oscartran;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 class Bellman_Ford {
 
-	class Edge {
+	static class Edge {
 		public int source;
 		public int target;
 		public int weight;
@@ -47,7 +49,37 @@ class Bellman_Ford {
 	static ArrayList<Edge> graph;
 	
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int c = sc.nextInt();
 		
+		for (int i = 0; i < c; i++) {
+			n = sc.nextInt();
+			m = sc.nextInt();
+			
+			graph = new ArrayList<Edge>();
+			
+			for (int j = 0; j < m; j++) {
+				int u = sc.nextInt();
+				int v = sc.nextInt();
+				int w = sc.nextInt();
+				graph.add(new Edge(u, v, w));
+			}
+			
+			dist = new int[n];
+			path = new int[n];
+			Arrays.fill(dist, Integer.MAX_VALUE);
+			Arrays.fill(path, -1);
+			
+			int s = 0, t = 0;
+			boolean res = BellmanFord(s);
+			
+			if (res == false) {
+				System.out.println("possible");
+			} else {
+				System.out.println("not possible");
+			}
+			
+		}
 	}
 
 }
